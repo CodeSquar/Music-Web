@@ -237,9 +237,7 @@ overflow: hidden;
    
 }
 input[type=range] {
-    height: 22px;
     -webkit-appearance: none;
-    margin: 10px 0;
     width: 100%;
   }
   input[type=range]:focus {
