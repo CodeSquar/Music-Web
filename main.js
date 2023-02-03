@@ -27,20 +27,22 @@ btncolor.addEventListener('click', () => {
   });
 
 /////////////////////
-
 const audio = document.getElementById("song");
 const toggleButton = document.getElementById("toggle-btn");
 const volumeSlider = document.getElementById("volumeSlider");
-
+const playIcon = document.getElementById("play-icon")
+const pauseIcon = document.getElementById("pause-icon")
 audio.volume=0.1
 
 toggleButton.addEventListener("click", function() {
   if (audio.paused) {
     audio.play();
-
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "block";
   } else {
     audio.pause();
-   
+    playIcon.style.display = "block";
+    pauseIcon.style.display = "none";
   }
 });
 
